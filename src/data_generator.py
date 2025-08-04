@@ -3,7 +3,9 @@ Created By: Anushuya Baidya
 Date: 7/28/25
 """
 import random
+
 import pandas as pd
+
 
 class BusinessDescriptionGenerator:
     """Generates realistic business descriptions for training"""
