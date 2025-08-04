@@ -1,0 +1,3 @@
+version,average_score,edge_pass_rate,model_path
+Baseline (v1),9.9,80.0,../models/domain_model
+Improved (v2),10.0,80.0,../models/domain_model_v2
