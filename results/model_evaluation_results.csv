@@ -1,0 +1,7 @@
+business,domains,domain_scores,average_score,status
+organic coffee shop downtown,"['coffeeshop.com', 'coffeeshoporganic.org', 'coffeeshoppro.io']","[10, 10, 10]",10.0,success
+innovative AI startup,"['startup.io', 'startupai.com', 'startupco.com']","[9.0, 10, 10]",9.7,success
+peaceful yoga studio,"['yogastudio.io', 'yogastudiospot.net', 'yogastudiospot.org']","[10, 10, 10]",10.0,success
+trendy fashion boutique,"['boutique.org', 'boutiquepro.io', 'boutiqueco.org']","[10, 10, 10]",10.0,success
+local bakery fresh bread,"['bakery.org', 'bakeryartisan.net', 'bakeryhub.com']","[10, 10, 10]",10.0,success
+mobile app development company,"['appdevelopment.net', 'appdevelopmentpro.net', 'appdevelopmentco.net']","[10, 10, 10]",10.0,success

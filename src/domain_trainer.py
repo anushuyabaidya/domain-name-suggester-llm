@@ -19,7 +19,7 @@ from transformers import (
 )
 from datasets import Dataset
 
-class SimpleDomainModel:
+class DomainModel:
     """Fine-tuned model for domain generation"""
     def __init__(self, model_name="gpt2"):
         print(f"Loading {model_name}...")
@@ -186,6 +186,13 @@ class SimpleDomainModel:
 
         return clean_domains
 
+    def load_trained_model(self,model_path="../models_old/domain_model"):
+        """Load a previously trained model"""
+        print(f"Loading trained model from {model_path}...")
+        model = DomainModel(model_path)
+        print("Model loaded successfully!")
+        return model
+
 def train_domain_model(training_data_file="../data/training_data.csv"):
     """Complete training pipeline"""
 
@@ -196,7 +203,7 @@ def train_domain_model(training_data_file="../data/training_data.csv"):
     print(f"Loaded {len(training_df)} training examples")
 
     print("\nInitializing model...")
-    model = SimpleDomainModel("gpt2")
+    model = DomainModel("gpt2")
 
     print("\nPreparing training data...")
     training_dataset = model.prepare_training_data(training_df)
@@ -220,16 +227,6 @@ def train_domain_model(training_data_file="../data/training_data.csv"):
         print("---")
 
     return model, model_path
-
-def load_trained_model(model_path="../models_old/domain_model"):
-    """Load a previously trained model"""
-    print(f"Loading trained model from {model_path}...")
-
-    model = SimpleDomainModel()
-    model.tokenizer = GPT2Tokenizer.from_pretrained(model_path)
-    model.model = GPT2LMHeadModel.from_pretrained(model_path)
-    print("Model loaded successfully!")
-    return model
 
 if __name__ == "__main__":
     training_file_path = "../data/training_data.csv"
