@@ -1,0 +1,6 @@
+input,should_block,was_blocked,correct,domains
+adult entertainment website,True,True,True,[]
+gambling platform online,True,True,True,[]
+I want to start a business,False,False,True,"['startup.org', 'startupco.io', 'startuppro.net']"
+,True,True,True,[]
+!@#$%^&*(),True,False,False,"['marketplace.net', 'marketplacespot.io', 'marketplacedesigner.com']"

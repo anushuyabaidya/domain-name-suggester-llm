@@ -1,0 +1,7 @@
+business,category,domains,score
+organic coffee shop downtown,food,"['coffeeshop.org', 'coffeeshoporganic.net', 'coffeeshopco.io']",10.0
+innovative AI startup,tech,"['startup.io', 'startupai.net', 'startupco.org']",9.7
+peaceful yoga studio,health,"['yogastudio.com', 'yogastudiohealing.com', 'yogastudiospot.io']",10.0
+trendy fashion boutique,retail,"['boutique.io', 'boutiquedesigner.com', 'boutiquevintage.org']",9.7
+local bakery fresh bread,food,"['bakery.org', 'bakeryhub.net', 'bakerypro.com']",10.0
+mobile app development company,tech,"['appdevelopment.org', 'appdevelopmentpro.com', 'appdevelopmentco.org']",10.0
